@@ -1,0 +1,40 @@
+PROCEDURE Dot product(u,v)
+VAR
+ u : ARRAY_OF FLOAT[2];
+ v : ARRAY_OF FLOAT [2];
+ i: INTEGER :=0 ;
+ ps : FLOAT :=0
+
+BEGIN
+FOR i FROM 0 TO u.length-1 STEP 1  DO
+ ps:=p+(u[i]*p[i])
+END_FOR
+write (ps)
+ END
+ FUNCTION Fdot product(u,v) : FLOAT
+ VAR
+  u : ARRAY_OF FLOAT[2];
+  v : ARRAY_OF FLOAT [2];
+  i: INTEGER :=0 ;
+  ps : FLOAT :=0
+ BEGIN
+    FOR i FROM 0 TO u.length-1 STEP 1  DO
+  ps:=p+(u[i]*p[i]) 
+     RETURN ps ;
+ END
+
+ ALGORITHM produit scalaire
+ VAR
+     vect1: ARRAY_OF FLOAT[2];
+     vect2: ARRAY_OF FLOAT[2];
+     sc : FLOAT :=0
+ BEGIN
+     write (vect1)
+     write (vect2)
+   sc := Dot product(vect1,vect2)
+     IF (sc =0) THEN
+    write ("les vecteur vect1 et vect2 sont orthogonaux")
+     END_IF
+       END
+
+END
